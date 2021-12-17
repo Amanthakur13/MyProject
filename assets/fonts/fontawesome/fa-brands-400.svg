@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="chrome://global/locale/intl.css" type="text/css"?>
+<parsererror xmlns="http://www.mozilla.org/newlayout/xml/parsererror.xml">XML Parsing Error: not well-formed
+Location: http://demo.themekita.com/atlantis/livepreview/examples/assets/fonts/fontawesome/fa-brands-400.svg
+Line Number 6, Column 51:<sourcetext>    &lt;font-face font-family="Font Awesome 5 Brands", "simple-line-icons"
+--------------------------------------------------^</sourcetext></parsererror>

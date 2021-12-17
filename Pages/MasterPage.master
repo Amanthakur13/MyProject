@@ -1,0 +1,377 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Pages_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Resturant</title>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+<link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="../assets/css/atlantis.css">
+<link rel="stylesheet" href="../assets/css/demo.css">
+<link href="../assets/css/fonts.min.css" rel="stylesheet" />
+
+<style>
+    .bg-primary-gradient {
+        background: #0d4ea0 !important;
+        background: -webkit-linear-gradient(legacy-direction(-45deg), #06418E, #0d4ea0) !important;
+        background: linear-gradient(-45deg, #05254e, #3163a2) !important;
+    }
+
+    .main-header {
+        background: #072244 !important;
+    }
+
+    <style > .body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+    }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            .topnav a.active {
+                background-color: #04AA6D;
+                color: white;
+            }
+
+    .wrapper {        left: 0px;
+    }
+
+    .btn btn-danger {
+    }
+
+    /*Style For Side bar*/
+
+    .sidebar {
+        min-height: calc(100vh - 65px);
+        background: #223e9c;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 600;
+        padding: 0;
+        z-index: 11;
+    }
+
+    .sidebar {
+        min-height: calc(100vh - 65px);
+        background: #223e9c;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 600;
+        padding: 0;
+        z-index: 11;
+        transition: width 0.25s ease, background 0.25s ease;
+        -webkit-transition: width 0.25s ease, background 0.25s ease;
+        -moz-transition: width 0.25s ease, background 0.25s ease;
+        -ms-transition: width 0.25s ease, background 0.25s ease;
+        width: 240px;
+    }
+
+    .mdi-menu:before {
+        content: "\F35C";
+    }
+
+    .mdi:before, .mdi-set {
+        display: inline-block;
+        font: normal normal normal 24px/1 "Material Design Icons";
+        font-size: inherit;
+        text-rendering: auto;
+        line-height: inherit;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .sidebar .nav .nav-item .nav-link i.menu-arrow:before {
+        content: "\F142";
+        font-family: "Material Design Icons";
+        font-style: normal;
+        display: block;
+        font-size: 1.1rem;
+        line-height: 10px;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        -ms-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+    }
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    .sidebar .nav .nav-item .nav-link {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        white-space: nowrap;
+        padding: 0.76rem 2.125rem;
+        color: #ffffff;
+        -webkit-transition-duration: 0.45s;
+        -moz-transition-duration: 0.45s;
+        -o-transition-duration: 0.45s;
+        transition-duration: 0.45s;
+        transition-property: color;
+        -webkit-transition-property: color;
+    }
+</style>
+
+
+<asp:contentplaceholder id="head" runat="server">
+    </asp:contentplaceholder>
+<body id="body-pd">
+    <form id="form1" runat="server">
+        <div class="wrapper">
+
+
+            <div class="card bg-dark text-white"style="margin-left:230px; width:87%;" >
+<img src="https://images.unsplash.com/photo-1619634727222-3318c5e9ebd7?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8aG90ZWx8fHx8fHwxNjM4MzUzNzcz&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=800" class="card-img" alt="..."/>
+<div class="card-img-overlay">
+<h4 class="card-title" style="text-align:center;font-size:50px; "><b>Hotel RedFort</b></h4>
+<div class="d-flex">
+<input class="form-control me-2 col-md-3" type="search" placeholder="Search" aria-label="Search" />
+<button class="btn btn-primary col-md-1" type="submit">Search </button>
+</div>
+<h3 class="card-title" style="text-align:center;"><b>"Wellcome"</b></h3>
+<p class="card-text"></p>
+
+</div>
+</div>
+
+
+
+
+            
+
+
+
+
+
+
+
+            <%--<div class="main-header">
+                <!-- Logo Header -->
+
+                <!-- End Logo Header -->
+
+                <!-- Navbar Header -->
+                <div class="topnav">
+                    <a class="primary" href="Dashboard.aspx">Dashboard</a>
+                    <a class="primary" href="Product_Registration.aspx">Product Master</a>
+                    <a class="primary" href="Billing.aspx">Billing</a>
+
+                    <a class="primary" href="#about">About</a>
+
+
+                    <div class="container-fluid">
+                        <div class="d-flex">
+                            <input class="form-control me-2 col-md-3" type="search" placeholder="Search" aria-label="Search" style="margin-left: 600px; margin-top: 12px" />
+                            <button class="btn btn-outline-success col-md-1" style="margin-top: 12px" type="submit">Search </button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="nav navbar-nav navbar-right" style="margin-left: 1450px; margin-top: -55px;">
+                        <a class="btn btn-danger" style="" href="/Restaurant_Login.aspx"><strong>Log out</strong></a>
+                    </div>
+
+
+
+
+
+                </div>
+
+                </div>--%>
+        </div>
+
+        
+
+        <%--side bar--%>
+
+
+        <div class="container-scroller d-flex">
+            <!-- partial:../../partials/_sidebar.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           <%-- <nav class="sidebar sidebar-offcanvas" id="sidebar" style="margin-top: -20px;">
+                <ul class="nav">
+                    <li class="nav-item sidebar-category">
+                        <p>Navigation</p>
+                        <span></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Dashboard.aspx">
+                            <i class="mdi mdi-view-quilt menu-icon"></i>
+                            <span class="menu-title">Dashboard</span>
+                            <div class="badge badge-info badge-pill">2</div>
+                        </a>
+                    </li>
+                    <li class="nav-item sidebar-category">
+                        <p>Components</p>
+                        <span></span>
+                    </li>--%>
+
+
+
+
+
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="Billing.aspx" aria-expanded="false" aria-controls="ui-basic">
+                            <i class="mdi mdi-palette menu-icon"></i>
+                            <span class="menu-title">Home</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="ui-basic">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"><a class="nav-link" href="Billig.aspx">Billing</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../../pages/ui-features/typography.html">Typography</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Billig.aspx">
+                            <i class="mdi mdi-view-headline menu-icon"></i>
+                            <span class="menu-title">Billing</span>
+                        </a>
+                    </li>
+                    <%--<li class="nav-item">
+          <a class="nav-link" href="../../pages/charts/chartjs.html">
+            <i class="mdi mdi-chart-pie menu-icon"></i>
+            <span class="menu-title">Charts</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../pages/tables/basic-table.html">
+            <i class="mdi mdi-grid-large menu-icon"></i>
+            <span class="menu-title">Tables</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../pages/icons/mdi.html">
+            <i class="mdi mdi-emoticon menu-icon"></i>
+            <span class="menu-title">Icons</span>
+          </a>
+        </li>--%>
+                    <li class="nav-item sidebar-category">
+                        <p>Pages</p>
+                        <span></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+                            <i class="mdi mdi-account menu-icon"></i>
+                            <span class="menu-title">User Pages</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="auth">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"><a class="nav-link" href="/Restaurant_Login.aspx">Login </a></li>
+
+                                <li class="nav-item"><a class="nav-link" href="Product_Registration.aspx">Product Register </a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item sidebar-category">
+                        <p>Apps</p>
+                        <span></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../docs/documentation.html">
+                            <i class="mdi mdi-file-document-box-outline menu-icon"></i>
+                            <span class="menu-title">Documentation</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.bootstrapdash.com/demo/spica/template/">
+                            <button class="btn bg-danger btn-sm menu-title">Upgrade to pro</button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+
+
+                
+
+
+
+            <%----Start-----------------------Admin Pannel--------------------------%>
+            <div>
+                <div class="container">
+                    <asp:ContentPlaceHolder ID="ContentBody" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentFooter" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <script src="../assets/js/core/jquery.3.2.1.min.js"></script>
+        <script src="../assets/js/core/bootstrap.min.js"></script>
+
+        <!-- jQuery Scrollbar -->
+        <script src="../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+        <!-- Chart Circle -->
+        <script src="../assets/js/plugin/chart-circle/circles.min.js"></script>
+        <!-- Datatables -->
+        <script src="../assets/js/plugin/datatables/datatables.min.js"></script>
+        <!-- Select2 -->
+        <script src="../assets/js/plugin/select2/select2.full.min.js"></script>
+        <!-- Atlantis JS -->
+        <script src="../assets/js/atlantis.min.js"></script>
+        <script src="../assets/js/Script.js"></script>
+
+
+        <script>
+
+            function formatDate(date) {
+                var newdate = date.split("-").reverse().join("-");
+                var d = new Date(newdate),
+                    month = '' + (d.getMonth() + 1),
+                    day = '' + d.getDate(),
+                    year = d.getFullYear();
+
+                if (month.length < 2) month = '0' + month;
+                if (day.length < 2) day = '0' + day;
+
+                return [year, month, day].join('-');
+            }
+        </script>
+    </form>
+</body>
+</html>

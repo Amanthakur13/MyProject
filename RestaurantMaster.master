@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="RestaurantMaster.master.cs" Inherits="RestaurantMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Indore Restaurant</title>
+     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/atlantis.css">
+    <link rel="stylesheet" href="../assets/css/demo.css">
+    <link href="../assets/css/fonts.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        .headMain{
+            border:2px solid black;
+            background-color:#2a2f5b;
+        }
+        body{
+           /*background-color:#2a2f5b;*/
+           
+        }
+    </style>
+
+   
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+              <div class="headMain">
+                                    <h3 style="color: white; text-align: center; margin-top: 5px;" runat="server"><b>INDORE RESTAURANT</b></h3>
+                                    <h5 style="text-align: center; color: white; margin-top: -10px;" runat="server">A/16, ELECTRONICS COMPLEX, </h5>
+                                    <h5 style="color: white; text-align: center; margin-top: -10px;" runat="server">PARDESHIPURA, </h5>
+                </div>
+        </asp:ContentPlaceHolder>
+         
+
+    </form>
+</body>
+</html>
